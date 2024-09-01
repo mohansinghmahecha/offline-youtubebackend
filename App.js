@@ -3,7 +3,7 @@ const express = require("express");
 
 const Subscriber = require("./src/models/subscribers"); // model of subscribers here we described datatypes
 
-const app = express();// ready to use of express
+const app = express(); // ready to use of express
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -36,16 +36,20 @@ app.get("/subscribers/names", async (req, res) => {
 });
 
 // http://localhost:3000/subscribers/:id) Response with a subscriber*(an object)*
+
 app.get("/subscribers/:id", async (req, res) => {
   try {
     const subscriber = await Subscriber.findById(req.params.id);
+
     if (!subscriber) {
+      console.log(`No subscriber found with ID: ${req.params.id}`);
       return res
         .status(404)
         .json({ message: "No subscriber found with the given ID" });
     }
     res.json(subscriber);
   } catch (error) {
+    console.error(`Error fetching subscriber: ${error.message}`);
     res.status(400).json({ message: error.message, statuscode: 400 });
   }
 });
