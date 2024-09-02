@@ -24,7 +24,7 @@ Error Handling and Testing: I implemented form of error handling to test the app
 | Black | ![#000000](https://via.placeholder.com/10/000000?text=+) #000000 |
 
 
-## documentaion 
+## documentaion using postman
 https://documenter.getpostman.com/view/29605878/2sAXjM4sAh
 
 
