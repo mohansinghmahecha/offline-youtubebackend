@@ -24,6 +24,14 @@ Error Handling and Testing: I implemented form of error handling to test the app
 | Black | ![#000000](https://via.placeholder.com/10/000000?text=+) #000000 |
 
 
+## documentaion 
+https://documenter.getpostman.com/view/29605878/2sAXjM4sAh
+
+
+
+Please refer to the accompanying documentation for a complete list of API routes and their functionalities.
+
+It is created with the help of Postman
 ## Screenshots of project
 
 ![Main box](https://firebasestorage.googleapis.com/v0/b/for-pic-storages.appspot.com/o/almabetter-homepage.png?alt=media&token=b9df115e-083e-4c67-865d-743ca50573a1)
@@ -62,7 +70,7 @@ Use index.js connect and start server
   
 ```
 
-Enter Data Into MongoDB and Must Be Connected With MongoDb Compass using
+Enter Data In MongoDB Must Be Connected With MongoDb Compass using
 "mongodb://localhost:27017/youtube-backend"
 
 ```bash
@@ -75,7 +83,7 @@ cd src
 node createDatabase.js
 ```
 
-it will start server in port 3000 , you must be in the "src" folder
+it will start server in port 3000 you must be in the "src" folder
 ```bash
  cd src
 ```
